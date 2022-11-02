@@ -4,6 +4,8 @@
  */
 package ferreteria;
 
+import Vista.Login;
+
 /**
  *
  * @author usuario
@@ -15,6 +17,9 @@ public class Ferreteria {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Login login = new Login();
+        login.setVisible(true); //para visibilizar el objeto
+        
     }
     
 }
