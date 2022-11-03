@@ -46,9 +46,19 @@ public class LoginControlador implements ActionListener{ //implementamos librer√
                     PanelAdmin admin=new PanelAdmin();
                     admin.setVisible(true);
                     this.v_login.dispose();
+                    //si el usuario y password no coinciden
+                    
+                }else{
+                    JOptionPane.showMessageDialog(null, "Usuario o contrase√±pa incorrecta");
+
                 }
             }
-            
+        
+        }else{
+            int pregunta=JOptionPane.showConfirmDialog(null, "Estas seguro que deseas salir", "Pregunta",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            if (pregunta==0) {
+                System.exit(0);
+            }
         }
     }
     
