@@ -4,17 +4,23 @@
  */
 package Vista;
 
+import Controlador.LoginControlador;
+import Modelo.Usuarios;
+import Modelo.UsuariosDao;
+
 /**
  *
  * @author usuario
  */
 public class Login extends javax.swing.JFrame {
-
+Usuarios us=new Usuarios();
+UsuariosDao usDao=new UsuariosDao();
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
+        LoginControlador users= new LoginControlador(us,usDao,this);
     }
 
     /**
@@ -29,11 +35,11 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        txtClave = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField3 = new javax.swing.JTextField();
+        btnLogin = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
+        txtUsuario = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
 
@@ -55,7 +61,7 @@ public class Login extends javax.swing.JFrame {
         jTextField2.setText("Contraseña");
         jTextField2.setBorder(null);
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 78, -1));
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 180, 30));
+        jPanel1.add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 180, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -63,18 +69,18 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setText("Iniciar Sesión");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 161, 42));
 
-        jButton1.setBackground(new java.awt.Color(0, 51, 255));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton1.setText("Login");
-        jButton1.setFocusable(false);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 100, 30));
+        btnLogin.setBackground(new java.awt.Color(0, 51, 255));
+        btnLogin.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnLogin.setText("Login");
+        btnLogin.setFocusable(false);
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 100, 30));
 
-        jButton2.setBackground(new java.awt.Color(255, 0, 0));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton2.setText("Salir");
-        jButton2.setFocusable(false);
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 100, 30));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 180, 30));
+        btnCancelar.setBackground(new java.awt.Color(255, 0, 0));
+        btnCancelar.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnCancelar.setText("Salir");
+        btnCancelar.setFocusable(false);
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 100, 30));
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 180, 30));
 
         jPanel2.setBackground(new java.awt.Color(255, 204, 51));
 
@@ -147,15 +153,15 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JPasswordField txtClave;
+    public javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

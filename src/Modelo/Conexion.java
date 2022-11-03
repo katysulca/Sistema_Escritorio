@@ -6,6 +6,8 @@ package Modelo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 /**
  *
  * @author YOSELYN
@@ -16,10 +18,12 @@ public class Conexion {
         try{
             //crear variable
             String db="jdbc:mysql://localhost:3306/SV_ferreteria";
-            con= DriverManager.getConexion(db, "root", "");
-            
+            con= DriverManager.getConnection(db, "root", "");
+            return con;
+        } catch (SQLException e){
+            JOptionPane.showMessageDialog(null,e.toString());
         }
-        return null;
+        return null; //para cerrar la conexion
         
     }
 }
