@@ -33,6 +33,24 @@ public class ConfiguracionControladores implements MouseListener {
     }
     @Override
     public void mouseClicked(MouseEvent e) {
+        if (e.getSource() == Login.JLabelNuevaCompra) {
+            Login.JTabbedPanel.setSelectedIndex(5);  
+        }else if (e.getSource() == Login.JLabelNuevaVenta) {
+            Login.JTabbedPanel.setSelectedIndex(6);
+            }else if (e.getSource() == Login.JLabelClientes) {
+            Login.JTabbedPanel.setSelectedIndex(0);
+            }else if (e.getSource() == Login.JLabelUsuarios) {
+            Login.JTabbedPanel.setSelectedIndex(2);
+            } else if (e.getSource() == Login.JLabelCategorias){
+            Login.JTabbedPanel.setSelectedIndex(3);
+            } else if (e.getSource() == Login.JLabelProductos) {
+            Login.JTabbedPanel.setSelectedIndex(4);
+            } else if (e.getSource() == Login.JLabelConfig) {
+            Login.JTabbedPanel.setSelectedIndex(7);
+            } else if (e.getSource() == Login.JLabelProveedor) {
+            Login.JTabbedPanel.setSelectedIndex(1);
+
+        }
     }
 
     @Override
@@ -45,16 +63,46 @@ public class ConfiguracionControladores implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-                if (e.getSource()== Login.JLabelCategorias) {
-            Login.JPanelCategorias.setBackground(new Color (255,51,51));
-        }else if(e.getSource()==Login.JLabelClientes)
-                Login.JPanleClientes.setBackground(new Color(255, 51, 51));
-
-
+        if (e.getSource() == Login.JLabelCategorias) {
+            Login.JPanelCategorias.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == Login.JLabelClientes){
+            Login.JPanleClientes.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == Login.JLabelConfig){
+            Login.JPanelConfig.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == Login.JLabelNuevaCompra){
+            Login.JPanelNuevaCompra.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == Login.JLabelNuevaVenta) {
+            Login.JPanelNuevaVenta.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == Login.JLabelProductos) {
+            Login.JPanelProductos.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == Login.JLabelProveedor) {
+            Login.JPanelProveedor.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == Login.JLabelUsuarios) {
+            Login.JPanelUsuarios.setBackground(new Color(241, 196, 15));
+        }    
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
+        if (e.getSource() == Login.JLabelCategorias) {
+            Login.JPanelCategorias.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == Login.JLabelClientes)
+            Login.JPanleClientes.setBackground(new Color(255,243,81));
+        if (e.getSource() == Login.JLabelConfig) {
+            Login.JPanelConfig.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == Login.JLabelNuevaCompra) {
+            Login.JPanelNuevaCompra.setBackground(new Color(255,243,81));
+        }
+        if (e.getSource() == Login.JLabelNuevaVenta) {
+            Login.JPanelNuevaVenta.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == Login.JLabelProductos) {
+            Login.JPanelProductos.setBackground(new Color(255,243,81));
+        }
+        if (e.getSource() == Login.JLabelProveedor) {
+            Login.JPanelProveedor.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == Login.JLabelUsuarios) {
+            Login.JPanelUsuarios.setBackground(new Color(255,243,81));
+        }
     }
     
 }

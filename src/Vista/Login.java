@@ -42,6 +42,8 @@ UsuariosDao usDao=new UsuariosDao();
         txtUsuario = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -54,33 +56,33 @@ UsuariosDao usDao=new UsuariosDao();
         jTextField1.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jTextField1.setText("Usuario");
         jTextField1.setBorder(null);
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 60, -1));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 60, -1));
 
         jTextField2.setBackground(new java.awt.Color(0, 204, 0));
         jTextField2.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jTextField2.setText("Contraseña");
         jTextField2.setBorder(null);
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 78, -1));
-        jPanel1.add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 180, 30));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 78, -1));
+        jPanel1.add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, 180, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Iniciar Sesión");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 161, 42));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 161, 42));
 
         btnLogin.setBackground(new java.awt.Color(0, 51, 255));
         btnLogin.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnLogin.setText("Login");
         btnLogin.setFocusable(false);
-        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 100, 30));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, 100, 30));
 
         btnCancelar.setBackground(new java.awt.Color(255, 0, 0));
         btnCancelar.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnCancelar.setText("Salir");
         btnCancelar.setFocusable(false);
-        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 100, 30));
-        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 180, 30));
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 100, 30));
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, 30));
 
         jPanel2.setBackground(new java.awt.Color(255, 204, 51));
 
@@ -95,7 +97,7 @@ UsuariosDao usDao=new UsuariosDao();
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 60, 30));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 60, 30));
 
         jPanel3.setBackground(new java.awt.Color(255, 204, 51));
 
@@ -110,9 +112,15 @@ UsuariosDao usDao=new UsuariosDao();
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 50, 30));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 50, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 390));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logof3-45444444-removebg-preview.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, 180, 150));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ferreteria-1.jpg"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 360, 400));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -156,6 +164,8 @@ UsuariosDao usDao=new UsuariosDao();
     public javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
