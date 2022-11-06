@@ -30,7 +30,7 @@ public class LoginControlador implements ActionListener{ //implementamos librer√
         this.v_login = v_login;
         this.v_login.btnLogin.addActionListener(this);
         this.v_login.btnCancelar.addActionListener(this);
-        this.v_login.setLocationRelativeTo(null);
+        this.v_login.setLocationRelativeTo(null);///para centrar
     }   
     @Override
     public void actionPerformed(ActionEvent e) {

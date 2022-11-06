@@ -21,7 +21,7 @@ public class Conexion {
         //try para capturar alguna excepciones
         try{
             //crear variable
-            String url="jdbc:mysql://localhost:3306/SV_ferreteria";//url es la referencia donde tengo almacenada mi base de daatos
+            String url="jdbc:mysql://localhost:3306/sisventa";//url es la referencia donde tengo almacenada mi base de daatos
             conexion= DriverManager.getConnection(url, "root", "");
             return conexion;
         } catch (SQLException e){

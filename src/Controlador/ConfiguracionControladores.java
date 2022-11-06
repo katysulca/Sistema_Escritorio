@@ -37,19 +37,19 @@ public class ConfiguracionControladores implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getSource() == Login.JLabelNuevaCompra) {
-            //añadido-sacar*******************************************************
+            /*añadido-sacar*******************************************************
             Nueva_Compra nc = new Nueva_Compra();
             nc.setVisible(true);
-            Login.setVisible(false);
+            Login.setVisible(false);*/
             //añadido-sacar********************************************************
-            //Login.JTabbedPanel.setSelectedIndex(5); 
+            Login.JTabbedPanel.setSelectedIndex(6); 
         }else if (e.getSource() == Login.JLabelNuevaVenta) {
          //añadido-sacar*******************************************************
-           Nueva_Venta1 nv=new Nueva_Venta1();
+           /*Nueva_Venta1 nv=new Nueva_Venta1();
            nv.setVisible(true);
-           Login.setVisible(false);
+           Login.setVisible(false);*/
         //añadido-sacar********************************************************
-            //Login.JTabbedPanel.setSelectedIndex(6);
+            Login.JTabbedPanel.setSelectedIndex(5);
             }else if (e.getSource() == Login.JLabelClientes) {
             Login.JTabbedPanel.setSelectedIndex(0);
             }else if (e.getSource() == Login.JLabelUsuarios) {
@@ -59,7 +59,7 @@ public class ConfiguracionControladores implements MouseListener {
             } else if (e.getSource() == Login.JLabelProductos) {
             Login.JTabbedPanel.setSelectedIndex(4);
             } else if (e.getSource() == Login.JLabelConfig) {
-            Login.JTabbedPanel.setSelectedIndex(5);
+            Login.JTabbedPanel.setSelectedIndex(7);
             } else if (e.getSource() == Login.JLabelProveedor) {
             Login.JTabbedPanel.setSelectedIndex(1);
 
