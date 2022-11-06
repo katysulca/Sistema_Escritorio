@@ -18,6 +18,7 @@ public class PanelAdmin extends javax.swing.JFrame {
     public PanelAdmin() {
         initComponents();
         ConfiguracionControladores config =new ConfiguracionControladores(this);
+        this.setLocationRelativeTo(null);
 
     } 
 
@@ -138,8 +139,6 @@ public class PanelAdmin extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         TableProductos = new javax.swing.JTable();
         JPpaginadorProducto = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jPanel12 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
@@ -1020,34 +1019,6 @@ public class PanelAdmin extends javax.swing.JFrame {
 
         JTabbedPanel.addTab("Productos", jPanel4);
 
-        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 715, Short.MAX_VALUE)
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 451, Short.MAX_VALUE)
-        );
-
-        JTabbedPanel.addTab("Nueva Compra", jPanel13);
-
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 715, Short.MAX_VALUE)
-        );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 451, Short.MAX_VALUE)
-        );
-
-        JTabbedPanel.addTab("Nueva Venta", jPanel12);
-
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
@@ -1306,8 +1277,6 @@ public class PanelAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;

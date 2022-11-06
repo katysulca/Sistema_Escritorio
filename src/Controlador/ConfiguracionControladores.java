@@ -4,6 +4,8 @@
  */
 package Controlador;
 
+import Vista.Nueva_Compra;
+import Vista.Nueva_Venta1;
 import Vista.PanelAdmin;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
@@ -35,9 +37,19 @@ public class ConfiguracionControladores implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getSource() == Login.JLabelNuevaCompra) {
-            Login.JTabbedPanel.setSelectedIndex(5);  
+            //añadido-sacar*******************************************************
+            Nueva_Compra nc = new Nueva_Compra();
+            nc.setVisible(true);
+            Login.setVisible(false);
+            //añadido-sacar********************************************************
+            //Login.JTabbedPanel.setSelectedIndex(5); 
         }else if (e.getSource() == Login.JLabelNuevaVenta) {
-            Login.JTabbedPanel.setSelectedIndex(6);
+         //añadido-sacar*******************************************************
+           Nueva_Venta1 nv=new Nueva_Venta1();
+           nv.setVisible(true);
+           Login.setVisible(false);
+        //añadido-sacar********************************************************
+            //Login.JTabbedPanel.setSelectedIndex(6);
             }else if (e.getSource() == Login.JLabelClientes) {
             Login.JTabbedPanel.setSelectedIndex(0);
             }else if (e.getSource() == Login.JLabelUsuarios) {
@@ -47,7 +59,7 @@ public class ConfiguracionControladores implements MouseListener {
             } else if (e.getSource() == Login.JLabelProductos) {
             Login.JTabbedPanel.setSelectedIndex(4);
             } else if (e.getSource() == Login.JLabelConfig) {
-            Login.JTabbedPanel.setSelectedIndex(7);
+            Login.JTabbedPanel.setSelectedIndex(5);
             } else if (e.getSource() == Login.JLabelProveedor) {
             Login.JTabbedPanel.setSelectedIndex(1);
 
