@@ -18,6 +18,7 @@ public class PanelAdmin extends javax.swing.JFrame {
     public PanelAdmin() {
         initComponents();
         ConfiguracionControladores config =new ConfiguracionControladores(this);
+
     } 
 
     /**
@@ -175,6 +176,7 @@ public class PanelAdmin extends javax.swing.JFrame {
         }
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 243, 81));
@@ -201,7 +203,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelNuevaVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 50));
+        jPanel1.add(JPanelNuevaVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 170, 50));
 
         JPanelNuevaCompra.setBackground(new java.awt.Color(255, 243, 81));
         JPanelNuevaCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -224,7 +226,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelNuevaCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 170, 50));
+        jPanel1.add(JPanelNuevaCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 170, 50));
 
         JPanelProductos.setBackground(new java.awt.Color(255, 243, 81));
         JPanelProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -247,7 +249,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 170, 50));
+        jPanel1.add(JPanelProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 170, 50));
 
         JPanleClientes.setBackground(new java.awt.Color(255, 243, 81));
         JPanleClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -270,7 +272,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanleClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 170, 50));
+        jPanel1.add(JPanleClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 170, 50));
 
         JPanelProveedor.setBackground(new java.awt.Color(255, 243, 81));
         JPanelProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -293,7 +295,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 170, 50));
+        jPanel1.add(JPanelProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 170, 50));
 
         JPanelCategorias.setBackground(new java.awt.Color(255, 243, 81));
         JPanelCategorias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -316,7 +318,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelCategorias, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 170, 50));
+        jPanel1.add(JPanelCategorias, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 170, 50));
 
         JPanelConfig.setBackground(new java.awt.Color(255, 243, 81));
         JPanelConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -339,7 +341,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 170, 50));
+        jPanel1.add(JPanelConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 170, 50));
 
         JPanelUsuarios.setBackground(new java.awt.Color(255, 243, 81));
         JPanelUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -362,9 +364,9 @@ public class PanelAdmin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(JPanelUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, -1, 50));
+        jPanel1.add(JPanelUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, -1, 50));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 170, 400));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 170, 480));
 
         jPanel2.setBackground(new java.awt.Color(43, 199, 4));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -475,10 +477,10 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoCliente)
                     .addComponent(btnRegistrarCliente)
                     .addComponent(btnModificarCliente))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(157, Short.MAX_VALUE))
         );
 
-        jPanel5.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 370));
+        jPanel5.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 450));
 
         TableClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -490,7 +492,7 @@ public class PanelAdmin extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(TableClientes);
 
-        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 390, 300));
+        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 410, 360));
 
         javax.swing.GroupLayout JPpaginadorClienteLayout = new javax.swing.GroupLayout(JPpaginadorCliente);
         JPpaginadorCliente.setLayout(JPpaginadorClienteLayout);
@@ -503,7 +505,7 @@ public class PanelAdmin extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel5.add(JPpaginadorCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 390, 40));
+        jPanel5.add(JPpaginadorCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 410, 40));
 
         JTabbedPanel.addTab("Clientes", jPanel5);
 
@@ -595,10 +597,10 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoProveedor)
                     .addComponent(btnRegistrarProveedor)
                     .addComponent(btnModificarProveedor))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
-        jPanel6.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 380));
+        jPanel6.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 450));
 
         TableProveedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -614,20 +616,20 @@ public class PanelAdmin extends javax.swing.JFrame {
             TableProveedor.getColumnModel().getColumn(3).setHeaderValue("Contraseña");
         }
 
-        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 390, 300));
+        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 420, 340));
 
         javax.swing.GroupLayout JPpaginadorProveedorLayout = new javax.swing.GroupLayout(JPpaginadorProveedor);
         JPpaginadorProveedor.setLayout(JPpaginadorProveedorLayout);
         JPpaginadorProveedorLayout.setHorizontalGroup(
             JPpaginadorProveedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGap(0, 410, Short.MAX_VALUE)
         );
         JPpaginadorProveedorLayout.setVerticalGroup(
             JPpaginadorProveedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel6.add(JPpaginadorProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 380, 40));
+        jPanel6.add(JPpaginadorProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 410, 40));
 
         JTabbedPanel.addTab("Proveedor", jPanel6);
 
@@ -729,7 +731,7 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoUsuario)
                     .addComponent(btnRegistrarUsuario)
                     .addComponent(btnModificarUsuario))
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
 
         TableUsuario.setModel(new javax.swing.table.DefaultTableModel(
@@ -765,27 +767,27 @@ public class PanelAdmin extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 412, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 14, Short.MAX_VALUE))
             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel7Layout.createSequentialGroup()
-                    .addGap(0, 308, Short.MAX_VALUE)
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel7Layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(JPpaginadorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 7, Short.MAX_VALUE)))
+                    .addGap(10, 323, Short.MAX_VALUE)
+                    .addComponent(JPpaginadorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 12, Short.MAX_VALUE)))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(128, Short.MAX_VALUE))
             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel7Layout.createSequentialGroup()
-                    .addGap(10, 11, Short.MAX_VALUE)
-                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(10, 10, 10)
+                    .addContainerGap(361, Short.MAX_VALUE)
                     .addComponent(JPpaginadorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+                    .addGap(0, 50, Short.MAX_VALUE)))
         );
 
         JTabbedPanel.addTab("Usuarios", jPanel7);
@@ -839,10 +841,10 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoCategoria)
                     .addComponent(btnRegistrarCategoria)
                     .addComponent(btnModificarModificar))
-                .addContainerGap(138, Short.MAX_VALUE))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
 
-        jPanel8.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 380));
+        jPanel8.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 450));
 
         TableCategoria.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -854,7 +856,7 @@ public class PanelAdmin extends javax.swing.JFrame {
         ));
         jScrollPane11.setViewportView(TableCategoria);
 
-        jPanel8.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 390, 300));
+        jPanel8.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 390, 330));
 
         javax.swing.GroupLayout JPpaginadorCategoriaLayout = new javax.swing.GroupLayout(JPpaginadorCategoria);
         JPpaginadorCategoria.setLayout(JPpaginadorCategoriaLayout);
@@ -867,7 +869,7 @@ public class PanelAdmin extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel8.add(JPpaginadorCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 380, 40));
+        jPanel8.add(JPpaginadorCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 380, 40));
 
         JTabbedPanel.addTab("Categorías", jPanel8);
 
@@ -983,10 +985,10 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoProducto)
                     .addComponent(btnRegistrarProducto)
                     .addComponent(btnModificarProductos))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
-        jPanel4.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 370));
+        jPanel4.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 450));
 
         TableProductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1001,7 +1003,7 @@ public class PanelAdmin extends javax.swing.JFrame {
             TableProductos.getColumnModel().getColumn(4).setHeaderValue("Estado");
         }
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 390, 300));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 390, 340));
 
         javax.swing.GroupLayout JPpaginadorProductoLayout = new javax.swing.GroupLayout(JPpaginadorProducto);
         JPpaginadorProducto.setLayout(JPpaginadorProductoLayout);
@@ -1014,7 +1016,7 @@ public class PanelAdmin extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel4.add(JPpaginadorProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 380, 40));
+        jPanel4.add(JPpaginadorProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 380, 40));
 
         JTabbedPanel.addTab("Productos", jPanel4);
 
@@ -1024,11 +1026,11 @@ public class PanelAdmin extends javax.swing.JFrame {
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
+            .addGap(0, 715, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 371, Short.MAX_VALUE)
+            .addGap(0, 451, Short.MAX_VALUE)
         );
 
         JTabbedPanel.addTab("Nueva Compra", jPanel13);
@@ -1037,11 +1039,11 @@ public class PanelAdmin extends javax.swing.JFrame {
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
+            .addGap(0, 715, Short.MAX_VALUE)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 371, Short.MAX_VALUE)
+            .addGap(0, 451, Short.MAX_VALUE)
         );
 
         JTabbedPanel.addTab("Nueva Venta", jPanel12);
@@ -1050,11 +1052,11 @@ public class PanelAdmin extends javax.swing.JFrame {
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
+            .addGap(0, 715, Short.MAX_VALUE)
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 371, Short.MAX_VALUE)
+            .addGap(0, 451, Short.MAX_VALUE)
         );
 
         JTabbedPanel.addTab("Configuración", jPanel11);
@@ -1146,10 +1148,10 @@ public class PanelAdmin extends javax.swing.JFrame {
                     .addComponent(btnNuevoProveedor1)
                     .addComponent(btnRegistrarProveedor1)
                     .addComponent(btnModificarProveedor1))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
-        jPanel15.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 370));
+        jPanel15.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 450));
 
         TableProveedor1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1165,24 +1167,24 @@ public class PanelAdmin extends javax.swing.JFrame {
             TableProveedor1.getColumnModel().getColumn(3).setHeaderValue("Contraseña");
         }
 
-        jPanel15.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 390, 300));
+        jPanel15.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 410, 350));
 
         javax.swing.GroupLayout JPpaginadorProveedor1Layout = new javax.swing.GroupLayout(JPpaginadorProveedor1);
         JPpaginadorProveedor1.setLayout(JPpaginadorProveedor1Layout);
         JPpaginadorProveedor1Layout.setHorizontalGroup(
             JPpaginadorProveedor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         JPpaginadorProveedor1Layout.setVerticalGroup(
             JPpaginadorProveedor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel15.add(JPpaginadorProveedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 380, 40));
+        jPanel15.add(JPpaginadorProveedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 400, 40));
 
         JTabbedPanel.addTab("Caja", jPanel15);
 
-        getContentPane().add(JTabbedPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 710, 400));
+        getContentPane().add(JTabbedPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 720, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

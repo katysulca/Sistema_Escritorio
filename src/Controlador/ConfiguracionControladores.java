@@ -28,6 +28,7 @@ public class ConfiguracionControladores implements MouseListener {
         this.Login.JLabelProveedor.addMouseListener(this);
         this.Login.JLabelUsuarios.addMouseListener(this);
         this.Login.JLabelProductos.addMouseListener(this);
+        
       
 
     }

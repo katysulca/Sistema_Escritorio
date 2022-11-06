@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
  
  */
 public class LoginControlador implements ActionListener{ //implementamos librería
+    
     //encapsular la clase usuarios
     private Usuarios us;
     private UsuariosDao usDao;
@@ -33,8 +34,7 @@ public class LoginControlador implements ActionListener{ //implementamos librer�
     }   
     @Override
     public void actionPerformed(ActionEvent e) {
-        //hacer validación
-        //que boton se ha presionado
+        //hacer validación qué boton se ha presionado
         if(e.getSource()==v_login.btnLogin){
             if(v_login.txtUsuario.getText().equals("")|| String.valueOf(v_login.txtClave.getPassword()).equals("")){
                JOptionPane.showMessageDialog(null, "Los campos estan vacíos");
@@ -42,9 +42,9 @@ public class LoginControlador implements ActionListener{ //implementamos librer�
                 String usuario = v_login.txtUsuario.getText();
                 String clave=String.valueOf(v_login.txtClave.getPassword());
                 us=usDao.login(usuario, clave);
-                if (us.getUsuario()!=null) {
-                    PanelAdmin admin=new PanelAdmin();
-                    admin.setVisible(true);
+                if (us.getUsuario()!=null) {//diferente a nulo
+                    PanelAdmin paneladmin=new PanelAdmin();
+                    paneladmin.setVisible(true);
                     this.v_login.dispose();
                     //si el usuario y password no coinciden
                     

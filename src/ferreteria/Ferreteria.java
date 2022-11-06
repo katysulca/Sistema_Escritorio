@@ -6,19 +6,14 @@ package ferreteria;
 
 import Vista.Login;
 
-/**
- *
- * @author usuario
- */
+
 public class Ferreteria {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         // TODO code application logic here
-        Login login = new Login();
-        login.setVisible(true); //para visibilizar el objeto
+        Login login = new Login(); //LLAMAR a el formuario Login
+        login.setVisible(true); //para visibilizar el Formulario Login
         
     }
     
