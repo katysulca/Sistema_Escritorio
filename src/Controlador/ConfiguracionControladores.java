@@ -4,8 +4,7 @@
  */
 package Controlador;
 
-import Vista.Nueva_Compra;
-import Vista.Nueva_Venta1;
+
 import Vista.PanelAdmin;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
