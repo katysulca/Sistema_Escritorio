@@ -4,23 +4,23 @@
  */
 package Vista;
 
-import Controlador.LoginControlador;
-import Modelo.Usuarios;
-import Modelo.UsuariosDao;
+//import Controlador.LoginControlador;
+//import Modelo.Usuarios;
+//import Modelo.UsuariosDao;
 
 /**
  *
  * @author usuario
  */
 public class Login extends javax.swing.JFrame {
-Usuarios us=new Usuarios();
-UsuariosDao usDao=new UsuariosDao();
+//Usuarios us=new Usuarios();
+//UsuariosDao usDao=new UsuariosDao();
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
-        LoginControlador users= new LoginControlador(us,usDao,this);
+        //LoginControlador users= new LoginControlador(us,usDao,this);
         
     }
 
@@ -185,7 +185,7 @@ UsuariosDao usDao=new UsuariosDao();
                 new Login().setVisible(true);
             }
         });
-    }
+    }//
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnCancelar;

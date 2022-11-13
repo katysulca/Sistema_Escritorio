@@ -17,50 +17,50 @@ import java.awt.event.MouseListener;
 public class ConfiguracionControladores implements MouseListener {
 
     //instanciar
-    private PanelAdmin Login;
+    private PanelAdmin views;
     
-    public ConfiguracionControladores(PanelAdmin Login){
-        this.Login=Login;
-        this.Login.JLabelCategorias.addMouseListener(this);
-        this.Login.JLabelClientes.addMouseListener(this);
-        this.Login.JLabelConfig.addMouseListener(this);
-        this.Login.JLabelNuevaCompra.addMouseListener(this);
-        this.Login.JLabelNuevaVenta.addMouseListener(this);
-        this.Login.JLabelProveedor.addMouseListener(this);
-        this.Login.JLabelUsuarios.addMouseListener(this);
-        this.Login.JLabelProductos.addMouseListener(this);
+    public ConfiguracionControladores(PanelAdmin views){
+        this.views=views;
+        this.views.JLabelCategorias.addMouseListener(this);
+        this.views.JLabelClientes.addMouseListener(this);
+        this.views.JLabelConfig.addMouseListener(this);
+        this.views.JLabelNuevaCompra.addMouseListener(this);
+        this.views.JLabelNuevaVenta.addMouseListener(this);
+        this.views.JLabelProveedor.addMouseListener(this);
+        this.views.JLabelUsuarios.addMouseListener(this);
+        this.views.JLabelProductos.addMouseListener(this);
         
       
 
     }
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (e.getSource() == Login.JLabelNuevaCompra) {
+        if (e.getSource() == views.JLabelNuevaCompra) {
             /*añadido-sacar*******************************************************
             Nueva_Compra nc = new Nueva_Compra();
             nc.setVisible(true);
             Login.setVisible(false);*/
             //añadido-sacar********************************************************
-            Login.JTabbedPanel.setSelectedIndex(6); 
-        }else if (e.getSource() == Login.JLabelNuevaVenta) {
+            views.JTabbedPanel.setSelectedIndex(6); 
+        }else if (e.getSource() == views.JLabelNuevaVenta) {
          //añadido-sacar*******************************************************
            /*Nueva_Venta1 nv=new Nueva_Venta1();
            nv.setVisible(true);
            Login.setVisible(false);*/
         //añadido-sacar********************************************************
-            Login.JTabbedPanel.setSelectedIndex(5);
-            }else if (e.getSource() == Login.JLabelClientes) {
-            Login.JTabbedPanel.setSelectedIndex(0);
-            }else if (e.getSource() == Login.JLabelUsuarios) {
-            Login.JTabbedPanel.setSelectedIndex(2);
-            } else if (e.getSource() == Login.JLabelCategorias){
-            Login.JTabbedPanel.setSelectedIndex(3);
-            } else if (e.getSource() == Login.JLabelProductos) {
-            Login.JTabbedPanel.setSelectedIndex(4);
-            } else if (e.getSource() == Login.JLabelConfig) {
-            Login.JTabbedPanel.setSelectedIndex(7);
-            } else if (e.getSource() == Login.JLabelProveedor) {
-            Login.JTabbedPanel.setSelectedIndex(1);
+            views.JTabbedPanel.setSelectedIndex(5);
+            }else if (e.getSource() == views.JLabelClientes) {
+            views.JTabbedPanel.setSelectedIndex(0);
+            }else if (e.getSource() == views.JLabelUsuarios) {
+            views.JTabbedPanel.setSelectedIndex(2);
+            } else if (e.getSource() == views.JLabelCategorias){
+            views.JTabbedPanel.setSelectedIndex(3);
+            } else if (e.getSource() == views.JLabelProductos) {
+            views.JTabbedPanel.setSelectedIndex(4);
+            } else if (e.getSource() == views.JLabelConfig) {
+            views.JTabbedPanel.setSelectedIndex(7);
+            } else if (e.getSource() == views.JLabelProveedor) {
+            views.JTabbedPanel.setSelectedIndex(1);
 
         }
     }
@@ -75,45 +75,45 @@ public class ConfiguracionControladores implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        if (e.getSource() == Login.JLabelCategorias) {
-            Login.JPanelCategorias.setBackground(new Color(241, 196, 15));
-        } else if (e.getSource() == Login.JLabelClientes){
-            Login.JPanleClientes.setBackground(new Color(241, 196, 15));
-        }else if (e.getSource() == Login.JLabelConfig){
-            Login.JPanelConfig.setBackground(new Color(241, 196, 15));
-        } else if (e.getSource() == Login.JLabelNuevaCompra){
-            Login.JPanelNuevaCompra.setBackground(new Color(241, 196, 15));
-        }else if (e.getSource() == Login.JLabelNuevaVenta) {
-            Login.JPanelNuevaVenta.setBackground(new Color(241, 196, 15));
-        } else if (e.getSource() == Login.JLabelProductos) {
-            Login.JPanelProductos.setBackground(new Color(241, 196, 15));
-        }else if (e.getSource() == Login.JLabelProveedor) {
-            Login.JPanelProveedor.setBackground(new Color(241, 196, 15));
-        } else if (e.getSource() == Login.JLabelUsuarios) {
-            Login.JPanelUsuarios.setBackground(new Color(241, 196, 15));
+        if (e.getSource() == views.JLabelCategorias) {
+            views.JPanelCategorias.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == views.JLabelClientes){
+            views.JPanleClientes.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == views.JLabelConfig){
+            views.JPanelConfig.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == views.JLabelNuevaCompra){
+            views.JPanelNuevaCompra.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == views.JLabelNuevaVenta) {
+            views.JPanelNuevaVenta.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == views.JLabelProductos) {
+            views.JPanelProductos.setBackground(new Color(241, 196, 15));
+        }else if (e.getSource() == views.JLabelProveedor) {
+            views.JPanelProveedor.setBackground(new Color(241, 196, 15));
+        } else if (e.getSource() == views.JLabelUsuarios) {
+            views.JPanelUsuarios.setBackground(new Color(241, 196, 15));
         }    
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        if (e.getSource() == Login.JLabelCategorias) {
-            Login.JPanelCategorias.setBackground(new Color(255,243,81));
-        } else if (e.getSource() == Login.JLabelClientes)
-            Login.JPanleClientes.setBackground(new Color(255,243,81));
-        if (e.getSource() == Login.JLabelConfig) {
-            Login.JPanelConfig.setBackground(new Color(255,243,81));
-        } else if (e.getSource() == Login.JLabelNuevaCompra) {
-            Login.JPanelNuevaCompra.setBackground(new Color(255,243,81));
+        if (e.getSource() == views.JLabelCategorias) {
+            views.JPanelCategorias.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == views.JLabelClientes)
+            views.JPanleClientes.setBackground(new Color(255,243,81));
+        if (e.getSource() == views.JLabelConfig) {
+            views.JPanelConfig.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == views.JLabelNuevaCompra) {
+            views.JPanelNuevaCompra.setBackground(new Color(255,243,81));
         }
-        if (e.getSource() == Login.JLabelNuevaVenta) {
-            Login.JPanelNuevaVenta.setBackground(new Color(255,243,81));
-        } else if (e.getSource() == Login.JLabelProductos) {
-            Login.JPanelProductos.setBackground(new Color(255,243,81));
+        if (e.getSource() == views.JLabelNuevaVenta) {
+            views.JPanelNuevaVenta.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == views.JLabelProductos) {
+            views.JPanelProductos.setBackground(new Color(255,243,81));
         }
-        if (e.getSource() == Login.JLabelProveedor) {
-            Login.JPanelProveedor.setBackground(new Color(255,243,81));
-        } else if (e.getSource() == Login.JLabelUsuarios) {
-            Login.JPanelUsuarios.setBackground(new Color(255,243,81));
+        if (e.getSource() == views.JLabelProveedor) {
+            views.JPanelProveedor.setBackground(new Color(255,243,81));
+        } else if (e.getSource() == views.JLabelUsuarios) {
+            views.JPanelUsuarios.setBackground(new Color(255,243,81));
         }
     }
     
